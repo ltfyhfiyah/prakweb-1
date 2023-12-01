@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas flexbox</title>
+    <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    header, footer {
+        background-color: yellow;
+        height: 15vh;
+    }
+    main {
+        display: flex;
+        height: 70vh;
+    }
+    article {
+        background-color: aliceblue;
+        flex: 2;
+    }
+    aside {
+        background-color: aqua;
+        flex: 1;
+    }
+    nav {
+        background-color: pink;
+        float: left;
+        width: 14vw;
+        height: 100vh;
+    }
+</style>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <nav> Nav</nav>
+    <header> Header</header>
+    <main>
+        <article> Article</article>
+        <aside> Aside</aside>
+    </main>
+    <footer> Footer</footer>
+</body>
+</html>
