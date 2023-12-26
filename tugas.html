@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<body>
+
+  <h2>Form Validation</h2>
+
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="name">Nama Pelanggan:</label>
+    <input type="text" id="name" name="name"  min="1" max="30">
+    <span id="name" class="name"></span>
+  <p>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" class="error"></span>
+  </p>
+  <p></p>
+    <label for="jam">Jam Keberangkatan:</label>
+    <input type="text" id="jam" name="jam">
+    <span id="jam" class="jam"></span>
+  </p>
+  <p>
+    <label for="tujuan">Tujuan Keberangkatan:</label>
+    <input type="text" id="Tujuan" name="Tujuan">
+    <span id="Tujuan" class="Tujuan"></span>
+  </p>
+  <p>
+    <label for="tiket">Jumlah Tiket:</label>
+    <input type="number" id="tiket" name="tiket" min="1" max="10">
+    <span id="tiket" class="tiket"></span>
+  </p>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var Jam = document.getElementById('tjam').value;
+      var tujuan = document.getElementById('tujuan').value;
+      var tiket = document.getElementById('tiket').value;
+    }
+
+  </script>
+
+</body>
+</html>
